@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="Kam2WwGIMoqAB7EBs2cQFx">
-<head data-page-node-id="nF8ksPj38qumfsNHKFmk33">
-<meta charset="UTF-8" data-page-node-id="FnoHhSbpKPvL9wO29vtn2S">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ZCM3JLCgRHYHfFFH21TU37">
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>政策动态看板 · 中国宏观经济与人力资源政策监测</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23D97706'/%3E%3Cpath d='M9 8h11l4 4v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z' fill='%23fff'/%3E%3Cpath d='M11 15h10M11 19h10M11 22h6' stroke='%23D97706' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E" data-page-node-id="yL0W6bkFMEtHijRQSoFhNv">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23D97706'/%3E%3Cpath d='M9 8h11l4 4v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z' fill='%23fff'/%3E%3Cpath d='M11 15h10M11 19h10M11 22h6' stroke='%23D97706' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
 :root{
   --bg:#F4F6F8; --card:#FFFFFF; --line:#E3E7EB; --line-soft:#EFF1F4;
@@ -181,85 +181,106 @@ mark{background:#FFE9A8;color:inherit;padding:0 1px;border-radius:2px}
 .qa-ai{white-space:pre-wrap;line-height:1.8;font-size:13px;color:var(--t1)}
 @media(max-width:1080px){.kpis{grid-template-columns:repeat(2,1fr)}.grid2,.grid3{grid-template-columns:1fr}}
 @media(max-width:640px){.wrap,.top-in{padding-left:14px;padding-right:14px}.kpis{grid-template-columns:1fr 1fr}.bar{grid-template-columns:88px 1fr 54px}.qa-in{flex-direction:column}}
+/* ---------- 报告视图（按政策监测报告支柱分组）---------- */
+.sec-h{font-size:16px;font-weight:700;margin:24px 0 12px;padding-left:11px;border-left:4px solid var(--accent);letter-spacing:-.2px;display:flex;align-items:baseline;gap:10px}
+.sec-h .n{font-size:12px;font-weight:500;color:var(--t3)}
+.sec-h .desc{font-size:12px;font-weight:400;color:var(--t3);margin-left:auto}
+.modbox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin-bottom:16px}
+.modbox h4{font-size:14.5px;font-weight:680;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.modbox .sub{font-size:12px;color:var(--t3);margin-bottom:12px}
+.kwn{display:inline-block;padding:3px 11px;border-radius:13px;background:var(--accent-soft);color:#8A4B00;font-size:12.5px;font-weight:600;margin:3px 6px 3px 0}
+.mini{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+.mini a{font-size:12.5px;color:var(--info);line-height:1.5}
+.mini .m-meta{font-size:11.5px;color:var(--t3);margin-left:6px}
+.act-list{counter-reset:al;list-style:none;padding:0;margin:6px 0 0}
+.act-list li{counter-increment:al;position:relative;padding:7px 0 7px 30px;border-bottom:1px solid var(--line-soft);font-size:13px;color:var(--t2);line-height:1.65}
+.act-list li:before{content:counter(al);position:absolute;left:0;top:7px;width:20px;height:20px;background:var(--accent);color:#fff;border-radius:5px;font-size:11px;font-weight:700;text-align:center;line-height:20px}
+.act-list li b{color:var(--t1)}
+.pill{display:inline-block;padding:2px 9px;border-radius:12px;font-size:11.5px;font-weight:600;background:var(--line-soft);color:var(--t2);margin:2px 4px 2px 0}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.act{background:var(--accent-soft);color:#8A4B00;border:1px solid var(--accent-line)}
+.note-infer{font-size:11.5px;color:var(--t3);font-style:italic;margin-top:6px}
 </style>
 </head>
-<body data-page-node-id="nq2kNDMizbp4XO4DGs9FGa">
+<body>
 
-<div class="top" data-page-node-id="sOpI62yHvoKIfwyYQJTXWW">
-  <div class="top-in" data-page-node-id="n4uJLtS9F5xHusaWrCYvey">
-    <div class="brand" data-page-node-id="qa2Tl5TXPLOWg3qtc4rADp">
-      <h1 id="boardTitle" data-page-node-id="5RUuQs01nbYlOKRY6cwYCf">政策动态看板</h1>
-      <span id="boardSub" data-page-node-id="r7CKfhKPZcpaTMcZz8xrB5">中国宏观经济与人力资源政策监测</span>
+<div class="top">
+  <div class="top-in">
+    <div class="brand">
+      <h1 id="boardTitle">政策动态看板</h1>
+      <span id="boardSub">中国宏观经济与人力资源政策监测</span>
     </div>
-    <div class="tabs" data-page-node-id="FskGPxDjUA2vcyKOwLIDN9">
-      <button class="tab on" data-view="overview" data-page-node-id="sc5sdH1noQCwUIUifmyMH3">汇总视图</button>
-      <button class="tab" data-view="detail" data-page-node-id="hDf4GGZES4JUOG7KejFRTE">明细列表</button>
-      <button class="tab" data-view="impact" data-page-node-id="chExnTEWB6f638YN7nflUk">影响与行动</button>
-      <button class="tab" data-view="qa" data-page-node-id="GMUfwfGKdMsLDca46YY5iQ">政策问答</button>
+    <div class="tabs">
+      <button class="tab on" data-view="overview">汇总视图</button>
+      <button class="tab" data-view="report">报告视图</button>
+      <button class="tab" data-view="detail">明细列表</button>
+      <button class="tab" data-view="impact">影响与行动</button>
+      <button class="tab" data-view="qa">政策问答</button>
     </div>
-    <div class="top-meta" data-page-node-id="IXeqUng2DFVn4NLNAGBFWV">
-      <span id="stale" data-page-node-id="LQk2RYcdj5MIwhD5BWKJ8V"></span>
-      <span id="updated" data-page-node-id="XRKcUrM3JbOs5Vd62g6GMC"></span>
+    <div class="top-meta">
+      <span id="stale"></span>
+      <span id="updated"></span>
     </div>
   </div>
 </div>
 
-<div class="wrap" data-page-node-id="Oois3RksR3PuEIZ40ZFQ26">
-  <div class="filters" data-page-node-id="CnguSP7ly1iaqefti6nLk8">
-    <div class="frow" data-page-node-id="QqD9Dboc37DUrGzimrXqLh">
-      <div class="fgroup" style="flex:1 1 100%" data-page-node-id="D9AtwKmS5NAkyHqiRZwZEG">
-        <div class="search" data-page-node-id="c3gPqMTEDGut0e02H4VCrv">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" data-page-node-id="CC8YnEiPeCXz5iGZzYIqf9"><circle cx="11" cy="11" r="7" data-page-node-id="ZTwjmZfDPWS1KGAaDoGDXe"/><path d="M20 20l-3.5-3.5" data-page-node-id="sJJa96QyJsu8nLU0KoRbAf"/></svg>
-          <input id="kw" type="text" placeholder="搜索政策标题、摘要、发布机构、标签…" data-page-node-id="nQBHLG0jKJcii5az2HNDEp">
+<div class="wrap">
+  <div class="filters">
+    <div class="frow">
+      <div class="fgroup" style="flex:1 1 100%">
+        <div class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="kw" type="text" placeholder="搜索政策标题、摘要、发布机构、标签…">
         </div>
       </div>
     </div>
-    <div class="frow" style="margin-top:12px" data-page-node-id="PdYrbiFvbzDk6EE3eloc1z">
-      <div class="fgroup" style="flex:1 1 100%" data-page-node-id="FiGNObzeoIi3Y7WZM9HpHa">
-        <div class="flabel" data-page-node-id="rNid8Fp0ugfZqg8GmW1KlG">政策主题</div>
-        <div class="chips" id="fCategory" data-page-node-id="ROw7woyY0bYdPoDGrukiUQ"></div>
+    <div class="frow" style="margin-top:12px">
+      <div class="fgroup" style="flex:1 1 100%">
+        <div class="flabel">政策主题</div>
+        <div class="chips" id="fCategory"></div>
       </div>
     </div>
-    <div class="frow" style="margin-top:12px" data-page-node-id="URDdUSLGdXBZZsRD3roxHp">
-      <div class="fgroup" data-page-node-id="1M8mD8rsLFY9lxNFPJ68Hb">
-        <div class="flabel" data-page-node-id="FNvm68v7P6kJjwAo8ljTXD">时间范围</div>
-        <div class="chips" id="fRange" data-page-node-id="53wJTHLAcHqjYd08EecW97"></div>
+    <div class="frow" style="margin-top:12px">
+      <div class="fgroup">
+        <div class="flabel">时间范围</div>
+        <div class="chips" id="fRange"></div>
       </div>
-      <div class="fgroup" data-page-node-id="VNxbMQxLBi3mDohvUYiOz3">
-        <div class="flabel" data-page-node-id="vwD3NzvxTVibm0HDy4hbpO">自定义</div>
-        <select class="sel" id="fFrom" data-page-node-id="zvmmja1SNvOknJglWe87WR"></select>
-        <span style="color:var(--t3);padding-top:6px" data-page-node-id="Kk5v7JvrCDCTGDq80XU3F8">至</span>
-        <select class="sel" id="fTo" data-page-node-id="mBlMeSJM6ybodUZrkBaxlt"></select>
-      </div>
-    </div>
-    <div class="frow" style="margin-top:12px" data-page-node-id="AcFEdiDUyGNSOiCGAY9IdC">
-      <div class="fgroup" style="flex:1 1 100%" data-page-node-id="n7xFBfpVpFc1aX09sSBXS6">
-        <div class="flabel" data-page-node-id="YJ0rbNoA5csMtlS2T33x1h">发布机构</div>
-        <div class="chips" id="fAgency" data-page-node-id="vKUYgknNfO702xXzevGvyI"></div>
+      <div class="fgroup">
+        <div class="flabel">自定义</div>
+        <select class="sel" id="fFrom"></select>
+        <span style="color:var(--t3);padding-top:6px">至</span>
+        <select class="sel" id="fTo"></select>
       </div>
     </div>
-    <div class="fbar" data-page-node-id="Ysa1MB59YNpNXyCpLvxupN">
-      <div class="fgroup" data-page-node-id="29JzSlJu3HdNxlOeJkl41W">
-        <div class="flabel" style="min-width:auto" data-page-node-id="rdBZ4HOj60J7Cq0zuw9cjP">来源等级</div>
-        <div class="chips" id="fLevel" data-page-node-id="DfZH9TpgqGxqBBDKvdjX7E"></div>
+    <div class="frow" style="margin-top:12px">
+      <div class="fgroup" style="flex:1 1 100%">
+        <div class="flabel">发布机构</div>
+        <div class="chips" id="fAgency"></div>
       </div>
-      <div class="fgroup" data-page-node-id="nAoQpppP0OXRy24ktQjxs4">
-        <div class="flabel" style="min-width:auto" data-page-node-id="ZvzT1Cr0bGc7E9H5Hcl6u3">机构层级</div>
-        <div class="chips" id="fAgencyLevel" data-page-node-id="VI4C8VMaLGVe0oH3O2Bdf4"></div>
+    </div>
+    <div class="fbar">
+      <div class="fgroup">
+        <div class="flabel" style="min-width:auto">来源等级</div>
+        <div class="chips" id="fLevel"></div>
       </div>
-      <button class="btn" id="share" data-page-node-id="XtIIXhM2fei4U6MB9HKsyQ">复制看板链接</button>
-      <button class="btn" id="dlSnapshot" data-page-node-id="gcyDBFfxwl5MR1ILtRqK6W">下载看板快照</button>
-      <button class="btn" id="reset" data-page-node-id="a8VNxRapAmtgzOlUdQ9FRt">重置筛选</button>
-      <span class="rescount" data-page-node-id="K857utUw9IbHc2NCEAvvKn">命中 <b id="cnt" data-page-node-id="OlS9f1ZQIBHB6jX4UYK4dn">0</b> 条政策</span>
+      <div class="fgroup">
+        <div class="flabel" style="min-width:auto">机构层级</div>
+        <div class="chips" id="fAgencyLevel"></div>
+      </div>
+      <button class="btn" id="share">复制看板链接</button>
+      <button class="btn" id="dlSnapshot">下载看板快照</button>
+      <button class="btn" id="reset">重置筛选</button>
+      <span class="rescount">命中 <b id="cnt">0</b> 条政策</span>
     </div>
   </div>
 
-  <div id="viewOverview" data-page-node-id="lnFSA5wAJa26XnQ9kLAz2f"></div>
-  <div id="viewDetail" style="display:none" data-page-node-id="4uU7StIFQuhRxQ77VbIDaB"></div>
-  <div id="viewImpact" style="display:none" data-page-node-id="0cvXW8XiJGjgeESkmYbA1m"></div>
-  <div id="viewQa" style="display:none" data-page-node-id="meaWiCSjAuADCjqeg6EcSD"></div>
+  <div id="viewOverview"></div>
+  <div id="viewReport" style="display:none"></div>
+  <div id="viewDetail" style="display:none"></div>
+  <div id="viewImpact" style="display:none"></div>
+  <div id="viewQa" style="display:none"></div>
 
-  <div class="footnote" id="foot" data-page-node-id="4AKLXsCfWVGdE40wgz6Tg5"></div>
+  <div class="footnote" id="foot"></div>
 </div>
 
 <!-- 数据与配置由 pipeline 生成：用 script 标签而非 fetch，保证 file:// 双击也能打开 -->
@@ -1175,6 +1196,118 @@ function renderFinancing(it){
   return '<div class="finsec"><div class="ml" style="margin-bottom:4px;color:var(--t3);font-weight:600;font-size:11.5px">投融资动态</div>'+inner+'</div>';
 }
 
+// ---------- 报告视图（按政策监测报告支柱分组）----------
+var PILLARS = [
+  {id:'macro_industry', name:'国家级宏观经济与产业政策', desc:'国务院及中央部委的财税、金融、促消费、重点产业规划与监管'},
+  {id:'regional_landing', name:'重点区域落地政策', desc:'一线/新一线及经济大省的产业奖补、落户、社保基数、稳岗补助'},
+  {id:'qualification_skill', name:'职业资格与技能培训专项', desc:'国家职业资格目录、技能等级认定、培训补贴、产教融合、新八级工'},
+  {id:'labor_employment', name:'劳动用工与就业', desc:'稳就业方案、新就业形态、劳动关系、最低工资、工时休假'},
+  {id:'social_security', name:'社保与福利', desc:'养老、医疗、失业、工伤保险及公积金制度调整'},
+  {id:'talent_policy', name:'人才与引才', desc:'人才引进、落户积分、高层次人才认定、海外人才'},
+  {id:'business_environment', name:'营商环境与合规', desc:'市场准入、外资外贸、企业合规与监管要求'},
+  {id:'other', name:'其他', desc:'未归入上述分类的政策'}
+];
+// 重点行业映射（用于「国家级重点行业发展建议」模块）
+var INDUSTRY_MAP = [
+  {key:'人工智能/智能体', kw:['人工智能','智能体','AI','大模型','脑机']},
+  {key:'新能源与储能/可再生能源', kw:['新能源','储能','可再生','光伏','电池','能源']},
+  {key:'高端制造/零碳制造', kw:['高端制造','装备','制造','零碳','工业','安全应急']},
+  {key:'生物医药/大健康', kw:['医药','生物','健康','医疗','药物']},
+  {key:'数字经济/消费服务业', kw:['数字','消费','服务','数据','MCN','互联网']}
+];
+function mapIndustry(it){
+  var hay = ((it.title||'')+' '+(it.tags||[]).join(' ')+' '+(it.sector||'')+' '+((it.summary||'').slice(0,40))).toLowerCase();
+  for(var i=0;i<INDUSTRY_MAP.length;i++){
+    if(INDUSTRY_MAP[i].kw.some(function(k){return hay.indexOf(k.toLowerCase())>=0;})) return INDUSTRY_MAP[i].key;
+  }
+  return null;
+}
+function renderReport(list){
+  var box = document.getElementById('viewReport');
+  var q = S.kw.trim();
+  var html = '<div class="qa-desc" style="max-width:none;margin-bottom:14px">报告视图：按「中国宏观经济与人力资源政策监测」报告结构分组呈现，卡片字段层级为 <b>政策标题 → 发布机构/日期 → 政策概要 → 产业影响与组织应对 → HR视角解读 → 政策链接</b>。下方附「重点行业发展建议」「职业资格与技能评价月度综述」「趋势综合分析」必含模块。</div>';
+
+  PILLARS.forEach(function(p){
+    var its = list.filter(function(it){return it.category===p.id;});
+    if(!its.length) return;
+    its.sort(function(a,b){ return String(b.publishDate||'').localeCompare(String(a.publishDate||'')); });
+    html += '<div class="sec-h">'+esc(p.name)+' <span class="n">'+its.length+' 条</span><span class="desc">'+esc(p.desc)+'</span></div>';
+    html += '<div class="plist">'+its.map(function(it){return card(it,q);}).join('')+'</div>';
+  });
+
+  // 必含模块一：国家级重点行业发展建议
+  html += industryModule(list);
+  // 必含模块二：职业资格与技能评价政策月度综述
+  html += skillModule(list);
+  // 必含模块三：趋势综合分析
+  html += trendBlock(list);
+
+  box.innerHTML = html;
+  box.style.display = '';
+}
+function industryModule(list){
+  var macro = list.filter(function(it){return it.category==='macro_industry';});
+  var grouped = {};
+  macro.forEach(function(it){ var k=mapIndustry(it); if(k){(grouped[k]=grouped[k]||[]).push(it);} });
+  var keys = Object.keys(grouped);
+  if(!keys.length) return '';
+  var html = '<div class="sec-h">必含模块 · 国家级重点行业发展建议 <span class="n">'+keys.length+' 个行业</span></div>';
+  keys.forEach(function(k){
+    var its = grouped[k];
+    html += '<div class="modbox"><h4>'+esc(k)+' <span class="pill act">'+its.length+' 项政策信号</span></h4>';
+    html += '<div class="sub">本月政策依据：'+its.map(function(it){return '《'+(it.title||'').replace(/^《|》$/g,'')+'》';}).join('、')+'</div>';
+    html += '<ul class="relist">';
+    its.slice(0,4).forEach(function(it){
+      html += '<li>关注 <a href="'+esc(it.sourceUrl)+'" target="_blank" rel="noopener noreferrer" style="color:var(--info)">'+esc(it.title)+'</a> 的落地节奏，评估对业务布局与人才结构的影响'+(it.hrAction?'；HR侧：'+esc(it.hrAction):'')+'</li>';
+    });
+    html += '</ul></div>';
+  });
+  return html;
+}
+function skillModule(list){
+  var sk = list.filter(function(it){return it.category==='qualification_skill';});
+  if(!sk.length) return '';
+  var html = '<div class="sec-h">必含模块 · 职业资格与技能评价政策月度综述 <span class="n">'+sk.length+' 条</span></div>';
+  html += '<div class="modbox"><div class="sub">本月职业资格与技能培训专项政策全景：'+sk.map(function(it){return '《'+(it.title||'').replace(/^《|》$/g,'')+'》（'+(it.agencyPrimary||'')+'，'+(it.publishDate||'')+'）';}).join('；')+'。趋势判断：技能人才开发持续加码，职业资格管理向市场化评价改革推进，"新八级工"与产教融合网络加速落地。</div>';
+  html += '<ul class="relist">';
+  sk.slice(0,8).forEach(function(it){
+    html += '<li><a href="'+esc(it.sourceUrl)+'" target="_blank" rel="noopener noreferrer" style="color:var(--info)">'+esc(it.title)+'</a> <span class="m-meta">'+esc(it.agencyPrimary||'')+' · '+esc(it.publishDate||'')+'</span>'+(it.summary?'<br><span class="m-meta">'+esc(it.summary.slice(0,90))+'…</span>':'')+'</li>';
+  });
+  html += '</ul></div>';
+  return html;
+}
+function trendBlock(list){
+  var catCount={};
+  list.forEach(function(it){ catCount[it.category]=(catCount[it.category]||0)+1; });
+  var topCats = Object.keys(catCount).sort(function(a,b){return catCount[b]-catCount[a];}).slice(0,4)
+     .map(function(c){return (CATNAME[c]||c)+' '+catCount[c];});
+  var tagCount={};
+  list.forEach(function(it){ (it.tags||[]).forEach(function(t){tagCount[t]=(tagCount[t]||0)+1;}); });
+  var topTags = Object.keys(tagCount).sort(function(a,b){return tagCount[b]-tagCount[a];}).slice(0,8);
+  var acts = list.filter(function(it){ return it.hrAction || it.impactReviewState==='pending'; })
+     .sort(function(a,b){return String(b.publishDate||'').localeCompare(String(a.publishDate||''));}).slice(0,8);
+  var html = '<div class="sec-h">必含模块 · 趋势综合分析 <span class="n">基于当前 '+list.length+' 条筛选结果自动生成</span></div>';
+  html += '<div class="modbox"><h4>月度政策主题词</h4><div>';
+  topCats.forEach(function(c){ html += '<span class="kwn">'+esc(c)+'</span>'; });
+  topTags.forEach(function(t){ html += '<span class="pill">'+esc(t)+'</span>'; });
+  if(!topTags.length) html += '<span class="note-infer">当前筛选无标签数据</span>';
+  html += '</div></div>';
+  html += '<div class="modbox"><h4>未来30天行动清单（合规 / 申报 / 培训）</h4><div class="sub">取自含「HR行动」或「影响待审签」的条目，可直接转工单</div><ol class="act-list">';
+  if(acts.length){
+    acts.forEach(function(it){
+      var act = it.hrAction || (it.impact&&typeof it.impact==='object'?(it.impact.enterprise&&it.impact.enterprise.summary||''):'');
+      html += '<li><b>'+esc(it.title)+'</b> <span class="m-meta">'+esc(it.agencyPrimary||'')+' · '+esc(it.publishDate||'')+'</span><br>'+(act?esc(act):'影响标注待人工审签');
+      if(it.impactReviewState==='pending') html += ' <span class="pill warn">影响待审签</span>';
+      html += '</li>';
+    });
+  } else { html += '<li>当前筛选下暂无明确行动项</li>'; }
+  html += '</ol></div>';
+  html += '<div class="modbox"><h4>下月政策预判（推断）</h4><div class="sub">以下为基于当前动向的推断，非官方预告</div><ul class="relist">';
+  ['稳就业与高校毕业生就业支持政策有望在毕业季后持续加码','新就业形态劳动者权益保障办法或将配套出台实施细则与监管指引','人工智能/智能体产业专项扶持与标准体系建设继续推进','职业技能等级认定市场化改革与"新八级工"评价体系加速落地','制造业重点产业链稳链强链与设备更新政策延续发力'].forEach(function(s){ html += '<li>'+esc(s)+'</li>'; });
+  html += '</ul><div class="note-infer">说明：预判依据当前看板政策趋势推断，具体以官方发布为准。</div></div>';
+  return html;
+}
+
 // ---------- 政策问答（基于 qaChunks 的轻量关键词检索）----------
 // 说明：浏览器内无 LLM key，故采用「检索依据片段 + 提示 + 复制上下文」方式，保证回答基于最新看板内容、附来源。
 // 如需真正的生成式问答，可在此处增加一个 fetch 调用（配置化的 endpoint/key），把下面 scored 结果作为 context 传入后端 LLM。
@@ -1322,7 +1455,9 @@ function render(){
   renderFilterBar();
   if(S.view==='overview'){ renderOverview(list); }
   else if(S.view==='detail'){ renderDetail(list); }
+  else if(S.view==='report'){ renderReport(list); }
   document.getElementById('viewOverview').style.display = S.view==='overview'?'':'none';
+  document.getElementById('viewReport').style.display = S.view==='report'?'':'none';
   document.getElementById('viewDetail').style.display = S.view==='detail'?'':'none';
   document.getElementById('viewImpact').style.display = S.view==='impact'?'':'none';
   if(S.view==='impact'){ renderImpact(); }
@@ -1333,7 +1468,10 @@ document.addEventListener('click', function(e){
   var t = e.target.closest('[data-k]');
   if(t){
     var k=t.getAttribute('data-k'), v=t.getAttribute('data-v');
-    if(k==='range'){ S.range = (v==='all'||v==='yearToDate')?(v==='all'?0:periods.length):parseInt(v,10); applyRange(S.range); }
+    if(k==='range'){
+      if(/^\d{4}-\d{2}$/.test(v)){ S.from=v; S.to=v; S.range=0; }
+      else { S.range = (v==='all'||v==='yearToDate')?(v==='all'?0:periods.length):parseInt(v,10); applyRange(S.range); }
+    }
     else if(k==='category') toggle(S.category,v);
     else if(k==='agency') toggle(S.agency,v);
     else if(k==='level') toggle(S.level,v);
